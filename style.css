@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* variáveis */
+html {
+    --bg-color: #AC91EB;
+    --border-color: #6b49bf;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+    margin: 48px auto;
+}
+
+/* imagem avatar */
+#perfil {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 3.7px;
+    border: var(--border-color) solid 4px;
+    box-shadow: 0 0 1.2em #dbcdff; 
+}
+
+/* nome */
+#name {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ecd8ff;
+    text-shadow: 1.5px 1.5px 1.5px var(--border-color), -1.5px 1.5px 1.5px var(--border-color), 1.5px -1.5px 1.5px var(--border-color), -1.5px -1.5px 1.5px var(--border-color);
+    margin-top: 24px;
+    margin-bottom: 2px;
+}
+
+/* username */
+#username {
+    font-size: 18px;
+    font-weight: 500;
+    color: #00082f;
+    opacity: 0.8;
+}
+
+/* icones */
+.icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* links */
+ul {
+    list-style: none;
+    margin: 40px 0;
+}
+
+/* style itens */
+ul li a{
+    display: flex;
+    height: 53px;
+    align-items: center;
+    justify-content: center;
+    background: var(--border-color);
+    box-shadow: 2px 2px 2px #45008a;
+    color: #ecd8ff;
+    text-transform: uppercase;
+    font-size: 14px;  
+    margin-bottom: 16px;
+    border-radius: 20px;
+    transition: background 400ms;
+}
+
+/* pseudo-class */
+ul li a:hover {
+    background: #9942ef;
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 8px #0000007e;
+}
+
+footer {
+    font-weight: 500;
+    font-size: 12px;
+    color: #00082f;
+    opacity: 0.8;
+    transition: opacity 400ms;
+}
+
+footer:hover {
+    opacity: 1;
+}
